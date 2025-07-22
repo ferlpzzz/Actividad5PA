@@ -13,6 +13,10 @@ while True:
     sales = []
     match option:
         case "1":
-            sale = int(input("Ingrese la venta:"))
-            sales.append(sale)
+            n= int(input("Ingrese cuantos dias desea ingresar: "))
+            for i in range(0, n):
+                sale = int(input("Ingrese la venta:"))
+                sales.append(sale)
+        case "2":
+
 
