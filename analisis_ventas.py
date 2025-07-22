@@ -17,6 +17,7 @@ while True:
             for i in range(0, n):
                 sale = int(input("Ingrese la venta:"))
                 sales.append(sale)
+
         case "2":
 
 
