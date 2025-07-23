@@ -55,6 +55,24 @@ while True:
             else:
                 count = sum(1 for sale in sales if sale > 1000)
                 print(f"Los días que superaron los Q1000 son: {count}")
+        case "6":
+            if len (sales) == 0:
+                print("No se han registrado ventas para analizar.")
+            else:
+                print("\nClasificación de ventas: ")
+                for i, sale in enumerate(sales, 1):
+                    if sale > 1000:
+                        classif = "Venta Alta"
+                    elif sale >= 500:
+                        classif = "Venta Media"
+                    else:
+                        classif = "Venta baja"
+                    print(f"Día {i}: Q{sale} ({classif})")
+        case "7":
+            print("Muchas gracias por usar este programa")
+            print("Cerrando programa...")
+            break
+
 
 
 
