@@ -45,6 +45,10 @@ while True:
                 print(f"Venta más baja: Q{min_sale}")
         case "4":
             if len(sales) == 0:
+                print("No se han registrado ventas para analizar.")
+            else:
+                average = sum(sales) / len(sales)
+                print(f"El promedio de ventas es: Q{average:.2f}")
 
 
 
