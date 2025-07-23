@@ -72,7 +72,8 @@ while True:
             print("Muchas gracias por usar este programa")
             print("Cerrando programa...")
             break
-
+        case _:
+            print("Opción no válida, por favor ingresa una opción válida.")
 
 
 
