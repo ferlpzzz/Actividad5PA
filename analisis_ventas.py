@@ -49,6 +49,13 @@ while True:
             else:
                 average = sum(sales) / len(sales)
                 print(f"El promedio de ventas es: Q{average:.2f}")
+        case "5":
+            if len(sales) == 0:
+                print("No se han registrado ventas para analizar.")
+            else:
+                count = sum(1 for sale in sales if sale > 1000)
+                print(f"Los días que superaron los Q1000 son: {count}")
+
 
 
 
