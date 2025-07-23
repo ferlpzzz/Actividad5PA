@@ -36,6 +36,15 @@ while True:
                 print("No se han registrado ventas para analizar.")
             else:
                 max_sale = min_sale = sales[0]
+                for sale in sales:
+                    if sale > max_sale:
+                        max_sale = sale
+                    if sale < min_sale:
+                        min_sale = sale
+                print(f"Venta más alta: Q{max_sale}")
+                print(f"Venta más baja: Q{min_sale}")
+        case "4":
+            if len(sales) == 0:
 
 
 
